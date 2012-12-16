@@ -83,7 +83,7 @@ $.fn.extend({
                 }
                 
                 // add or remove the max class name
-                $el[ (char_diff < 0 ? 'add' : 'remove') + 'Class' ]( options.maxClassName );
+                $el[ (char_diff <= 0 ? 'add' : 'remove') + 'Class' ]( options.maxClassName );
                 
                 // set the number of characters left or number of characters over the limit
                 $el.find('.num').text( Math.abs(char_diff) );
